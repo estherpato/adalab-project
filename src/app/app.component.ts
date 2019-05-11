@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'adalab-project';
+  isCardView: boolean;
+  data: any;
+  
+  constructor() {
+    this.isCardView = false;
+  }
+
+  getData(data) {
+    this.isCardView = true;
+    this.data = data
+  }
 }

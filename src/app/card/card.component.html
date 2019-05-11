@@ -1,0 +1,15 @@
+<section *ngIf="isCardView" class="section">
+  <h2>{{data.name}}</h2>
+  <p>{{data.job}}</p>
+  <p>email: {{data.email}}</p>
+  <p>Teléfono: {{data.phone}}</p>
+  <p>RRSS</p>
+  <ul>
+    <li>Twitter:
+      <a class="link" href="http://twitter.com/{{data.twitter}}" target="_blank" rel="noopener noreferrer">{{data.twitter}}</a>
+    </li>
+    <li>GitHub:
+      <a class="link" href="http://github.com/{{data.github}}" target="_blank" rel="noopener noreferrer">{{data.github}}</a>
+    </li>
+  </ul>
+</section>

@@ -1,0 +1,45 @@
+:host {
+    width: 100%;
+    display: flex;
+}
+
+.form-wrapper {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20px;
+    background-color: white;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    border-radius: 10px;
+}
+
+label {
+    padding: 10px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+    width: 100%;
+    display: flex;
+    padding-bottom: 5px;
+    & > span {
+        font-size: 22px;
+        font-weight: 500;
+        color: #F33086;
+        margin-bottom: -7px;
+    }
+}
+
+input {
+    border: 2px solid #F33086;
+    border-radius: 5px;
+    height: 30px;
+    padding: 0 10px;
+    &:focus {
+        border: 2px solid #7cca2f;
+        border-radius: 5px;
+        outline: none;
+    }
+}

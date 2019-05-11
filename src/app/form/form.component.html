@@ -1,0 +1,41 @@
+<form *ngIf="!isCardView" class="form-wrapper">
+  <label for="name-field">
+    <div class="label">
+      Name <span class="required">*</span>
+    </div>
+    <input id="name-field" name="name-field" type="text" [(ngModel)]="nameValue" required>
+  </label>
+  <label for="job-field">
+    <div class="label">
+      Job <span class="required">*</span>
+    </div>
+    <input id="job-field" name="job-field" type="text" [(ngModel)]="jobValue" required>
+  </label>
+  <label for="email-field">
+    <div class="label">
+      Email <span class="required">*</span>
+    </div>
+    <input id="email-field" name="email-field" type="email" [(ngModel)]="emailValue" required>
+  </label>
+  <label for="phone-field">
+    <div class="label">
+      Phone <span class="required">*</span>
+    </div>
+    <input id="phone-field" name="phone-field" type="tel" [(ngModel)]="phoneValue" required>
+  </label>
+  <label for="twitter-field">
+    <div class="label">
+      Twitter
+    </div>
+    <input id="twitter-field" name="twitter-field" type="text" [(ngModel)]="twitterValue">
+  </label>
+  <label for="github-field">
+    <div class="label">
+      Github
+    </div>
+    <input id="github-field" name="github-field" type="text" [(ngModel)]="githubValue">
+  </label>
+
+  <!-- button here with event -->
+
+</form>

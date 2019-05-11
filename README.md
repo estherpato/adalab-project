@@ -1,27 +1,56 @@
-# AdalabProject
+# Adalab project
+## Getting started
+### Prerequisites
+#### Node .js
+Angular requires Node.js version 8.x or 10.x.
+To check your version, run: `node -v`
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.9.
+To install Node.js:
 
-## Development server
+- Ubuntu
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+`sudo apt update`
 
-## Code scaffolding
+`sudo apt install nodejs npm`
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Mac
 
-## Build
+`brew update`
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+`brew install node`
 
-## Running unit tests
+### Install the Angular CLI
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+You use the Angular CLI to create projects, generate application and library code, and perform a variety of ongoing development tasks such as testing, bundling, and deployment.
 
-## Running end-to-end tests
+`npm install -g @angular/cli`
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+### Create a workspace and initial application
 
-## Further help
+In this case we will just fork the repo and work with it, but in case you want to create a new Angular project:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+`ng new my-app`
+
+Remember to run `npm install` after cloning this repo!
+
+### Serve the application
+
+Run the following line once you're inside the project folder:
+
+`ng serve --open`
+
+### Deploy on Github pages
+
+
+## Resources
+### Installations
+- Angular: [https://angular.io/guide/quickstart](https://angular.io/guide/quickstart)
+- Node.js Ubuntu: [https://linuxize.com/post/how-to-install-node-js-on-ubuntu-18.04/](https://linuxize.com/post/how-to-install-node-js-on-ubuntu-18.04/)
+- Node.js mac: [https://treehouse.github.io/installation-guides/mac/node-mac.html](https://treehouse.github.io/installation-guides/mac/node-mac.html)
+- Github pages: [https://alligator.io/angular/deploying-angular-app-github-pages/](https://alligator.io/angular/deploying-angular-app-github-pages/)
+
+### Styling
+
+- Material box-shadow: [https://codepen.io/sdthornton/pen/wBZdXq](https://codepen.io/sdthornton/pen/wBZdXq)
+- Background: [https://blog.logrocket.com/advanced-effects-with-css-background-blend-modes-4b750198522a](https://blog.logrocket.com/advanced-effects-with-css-background-blend-modes-4b750198522a)
+- Hover: [https://css-tricks.com/having-fun-with-link-hover-effects/](https://css-tricks.com/having-fun-with-link-hover-effects/)

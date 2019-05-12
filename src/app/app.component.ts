@@ -16,5 +16,6 @@ export class AppComponent {
   getData(data) {
     this.isCardView = true;
     this.data = data
+    console.log(data)
   }
 }

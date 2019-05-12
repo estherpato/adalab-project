@@ -1,5 +1,4 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import { compileNgModule } from '@angular/compiler';
 
 @Component({
   selector: 'app-form',
@@ -19,22 +18,33 @@ export class FormComponent implements OnInit {
   twitterValue: string;
   githubValue: string;
 
-  constructor() { }
+  isCompleted: boolean;
+
+  constructor() {
+    this.isCompleted = true;
+  }
 
   ngOnInit() {
   }
 
-  handleSubmit() {
+  onSubmit(event) {
     this.data = {
       name: this.nameValue,
       job: this.jobValue,
       email: this.emailValue,
       phone: this.phoneValue,
-      twitterValue: this.twitterValue,
-      githubValue: this.githubValue
+      twitter: this.twitterValue,
+      github: this.githubValue
     }
-    /* event emitter */
 
-    this.sendData.emit(this.data);
+    if (this.data.name
+      && this.data.job
+      && this.data.email
+      && this.data.phone) {
+      this.isCompleted = true;
+      this.sendData.emit(this.data);
+    } else {
+      this.isCompleted = false;
+    }
   }
 }

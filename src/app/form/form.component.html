@@ -36,6 +36,8 @@
     <input id="github-field" name="github-field" type="text" [(ngModel)]="githubValue">
   </label>
 
-  <!-- button here with event -->
+  <p *ngIf="!isCompleted">Please, fill all the required fields! :)</p>
+
+  <app-button (submit)="onSubmit($event)"></app-button>
 
 </form>

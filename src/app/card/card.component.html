@@ -3,8 +3,8 @@
   <p>{{data.job}}</p>
   <p>email: {{data.email}}</p>
   <p>Teléfono: {{data.phone}}</p>
-  <p>RRSS</p>
-  <ul>
+  <p *ngIf="data.twitter && data.github">Social Media</p>
+  <ul *ngIf="data.twitter && data.github" class="social-media-list">
     <li>Twitter:
       <a class="link" href="http://twitter.com/{{data.twitter}}" target="_blank" rel="noopener noreferrer">{{data.twitter}}</a>
     </li>

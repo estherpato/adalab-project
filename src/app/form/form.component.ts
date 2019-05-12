@@ -33,8 +33,8 @@ export class FormComponent implements OnInit {
       twitterValue: this.twitterValue,
       githubValue: this.githubValue
     }
+    
     /* event emitter */
 
-    this.sendData.emit(this.data);
   }
 }

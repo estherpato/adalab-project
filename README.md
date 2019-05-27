@@ -39,15 +39,12 @@ Run the following line once you're inside the project folder:
 
 `ng serve --open`
 
-### Deploy on Github pages
-
 
 ## Resources
 ### Installations
 - Angular: [https://angular.io/guide/quickstart](https://angular.io/guide/quickstart)
 - Node.js Ubuntu: [https://linuxize.com/post/how-to-install-node-js-on-ubuntu-18.04/](https://linuxize.com/post/how-to-install-node-js-on-ubuntu-18.04/)
 - Node.js mac: [https://treehouse.github.io/installation-guides/mac/node-mac.html](https://treehouse.github.io/installation-guides/mac/node-mac.html)
-- Github pages: [https://alligator.io/angular/deploying-angular-app-github-pages/](https://alligator.io/angular/deploying-angular-app-github-pages/)
 
 ### Styling
 
